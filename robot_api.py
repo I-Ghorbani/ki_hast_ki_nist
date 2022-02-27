@@ -47,7 +47,7 @@ while True:
 Please answer the questions and if you have any problems, read the guide:\n
 |start -----> Start attendance check
 |show list -----> Show absent students
-|clear list -----> Clear Clear the list of absent students in a class
+|clear list -----> Clear the list of absent students in a class
 |exit -----> Exiting the app\n
 Please enter your order to begin:
 '''
