@@ -60,10 +60,12 @@ Please enter your order to begin:\n
             classname = input('Please enter class name:\n')
             pdtabulate=lambda df:tabulate(df,tablefmt='psql')
             print(pdtabulate(show_all_students_by_class(classname)))
-        else:
+        if a1 == 'student':
             studentname = input('Please enter student name:\n')
             pdtabulate=lambda df:tabulate(df,tablefmt='psql')
             print(pdtabulate(show_all_students_by_name(studentname)))
+        else:
+            print('Your command was not clear. Try again')
 
     if a == 'clear list':
         a2 = input('Enter class name:\n')
