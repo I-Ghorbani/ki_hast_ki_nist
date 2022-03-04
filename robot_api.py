@@ -45,17 +45,16 @@ Please answer the questions and if you have any problems, read the guide:''')
 while True:
     a = input(
 '''
-
 |start -----> Start attendance check
 |show list -----> Show absent students
 |clear list -----> Clear the list of absent students in a class
 |exit -----> Exiting the app\n
-Please enter your order to begin:\n
+Please enter your order to begin:
 '''
 
 )
     if a == 'show list':
-        a1 = input('Do you want to be separated by the name of the class or by the name of the student?\n(class name or student?)')
+        a1 = input('\nDo you want to be separated by the name of the class or by the name of the student?(class name or student?)\n')
         if a1 == 'class name':
             classname = input('Please enter class name:\n')
             pdtabulate=lambda df:tabulate(df,tablefmt='psql')
@@ -64,8 +63,6 @@ Please enter your order to begin:\n
             studentname = input('Please enter student name:\n')
             pdtabulate=lambda df:tabulate(df,tablefmt='psql')
             print(pdtabulate(show_all_students_by_name(studentname)))
-        else:
-            print('Your command was not clear. Try again')
 
     if a == 'clear list':
         a2 = input('Enter class name:\n')
